@@ -75,10 +75,10 @@
 .j-ico{color:#fff;width:58px;height:58px;margin:0 auto 14px;border-radius:16px;background:var(--grad-green,#14532D);display:flex;align-items:center;justify-content:center;font-size:28px}
 .j-step h3,.j-pay h3,.j-plan h3{margin:0 0 8px;font-size:18px;color:var(--ink)}
 .j-step p,.j-pay p,.j-plan p{margin:0;color:var(--ink-soft);font-size:14.5px;line-height:1.65}
-.j-pays{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.j-pays{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .j-pay{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:24px;text-align:center}
 .j-pay .j-ico{color:var(--nosh-green);background:#e8f5ec}
-.j-badges{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:24px}
+.j-pay.info{background:#fff}.j-pay.info .j-ico{background:var(--grad-orange,#F2820C);color:#fff}.j-pay.no .j-ico{background:#fdecec;color:#a83232}.j-badges{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:24px}
 .j-badge{padding:10px 18px;border-radius:999px;font-size:14px;font-weight:700}
 .j-badge.ok{background:#e8f5ec;color:var(--nosh-green)}
 .j-badge.no{background:#fdecec;color:#a83232;text-decoration:line-through;text-decoration-thickness:1px}
@@ -97,7 +97,7 @@
 .j-t b{display:block;color:var(--nosh-green);font-size:18px;font-family:'Plus Jakarta Sans',sans-serif}
 .j-t span{font-size:13.5px;color:var(--ink-soft)}
 .j-t .j-ico{color:#fff;width:50px;height:50px;font-size:24px}
-@media(max-width:600px){.page-hero h1{font-size:32px}.j-facts{margin-top:-20px;grid-template-columns:repeat(2,1fr);gap:12px}.j-fact{padding:16px 10px}.j-fact b{font-size:19px}}
+@media(max-width:600px){.page-hero h1{font-size:32px}.j-facts{margin-top:-20px;grid-template-columns:repeat(2,1fr);gap:12px}.j-pays{grid-template-columns:repeat(2,1fr);gap:12px}.j-pay{padding:18px 12px}.j-pay h3{font-size:16px}.j-fact{padding:16px 10px}.j-fact b{font-size:19px}}
 </style>
 </head>
 
@@ -120,11 +120,11 @@
           <li><a href="/#menu" class="nav-link">Menu</a></li>
           <li><a href="/#areas" class="nav-link">Coverage</a></li>
           <li><a href="/faq/" class="nav-link">FAQ</a></li>
-          <li><a href="https://wa.me/923309993307" class="btn-primary nav-cta-mobile" target="_blank"
+          <li><a href="https://app.noshmate.pk" class="btn-primary nav-cta-mobile" target="_blank"
               rel="noopener">Order Now</a></li>
         </ul>
 
-        <a href="https://wa.me/923309993307" class="nav-cta" target="_blank" rel="noopener">Order Now</a>
+        <a href="https://app.noshmate.pk" class="nav-cta" target="_blank" rel="noopener">Order Now</a>
 
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
           <span></span><span></span><span></span>
@@ -138,7 +138,7 @@
       <span class="eyebrow">Join NoshMaté</span>
       <h1>Start Office Lunch in 4 Simple Steps</h1>
       <p class="lead">Fresh, home-style lunch delivered to your desk, Monday to Saturday. Everything you need to know is on this page.</p>
-      <div class="hero-buttons"><a href="https://wa.me/923309993307?text=Hi%2C%20I%27d%20like%20to%20join%20NoshMat%C3%A9%20office%20lunch" class="btn-primary" target="_blank" rel="noopener"><span class="btn-icon"><svg class="wa-glyph" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span>Order Now</a><a href="/assets/docs/noshmate-office-lunch-menu.pdf" class="btn-secondary" download target="_blank" rel="noopener"><span class="btn-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 20h14" stroke="#14532D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Download Menu (PDF)</a></div>
+      <div class="hero-buttons"><a href="https://app.noshmate.pk" class="btn-primary" target="_blank" rel="noopener"><span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Order Now</a><a href="/assets/docs/noshmate-office-lunch-menu.pdf" class="btn-secondary" download target="_blank" rel="noopener"><span class="btn-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 20h14" stroke="#14532D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Download Menu (PDF)</a></div>
     </div>
   </section>
 
@@ -155,9 +155,9 @@
 
   <section class="plain-section">
     <div class="container">
-      <div class="section-head"><span class="eyebrow">How to Order</span><h2>4 Steps, Under a Minute</h2><p>No app, no account, no forms.</p></div>
+      <div class="section-head"><span class="eyebrow">How to Order</span><h2>4 Steps, Under a Minute</h2><p>Quick and simple, no long forms.</p></div>
       <div class="j-steps">
-        <div class="j-step"><span class="n">1</span><div class="j-ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg></div><h3>Tap Order Now</h3><p>WhatsApp opens with a message ready to send to +92 330 9993307.</p></div>
+        <div class="j-step"><span class="n">1</span><div class="j-ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg></div><h3>Tap Order Now</h3><p>The ordering page opens at app.noshmate.pk. Questions? WhatsApp +92 330 9993307.</p></div>
         <div class="j-step"><span class="n">2</span><div class="j-ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div><h3>Share your details</h3><p>Office area and address, number of lunches, plan and start date.</p></div>
         <div class="j-step"><span class="n">3</span><div class="j-ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg></div><h3>Pay in advance</h3><p>Bank transfer, JazzCash or Easypaisa. We confirm once received.</p></div>
         <div class="j-step"><span class="n">4</span><div class="j-ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 11h18M12 11v8M8 3v3M16 3v3"/></svg></div><h3>Lunch at your desk</h3><p>Cooked fresh that morning and delivered the next working day.</p></div>
@@ -167,13 +167,15 @@
 
   <section class="plain-section alt">
     <div class="container">
-      <div class="section-head"><span class="eyebrow">Payment</span><h2>How Payment Works</h2><p>Payment is taken in advance for each order. If we ever fail to deliver a meal, that amount is 100% refundable.</p></div>
+      <div class="section-head"><span class="eyebrow">Payment</span><h2>How Payment Works</h2></div>
       <div class="j-pays">
-        <div class="j-pay"><div class="j-ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10 12 4l9 6M5 10v8M9 10v8M15 10v8M19 10v8M3 20h18"/></svg></div><h3>Bank transfer</h3><p>We share the account details on WhatsApp.</p></div>
-        <div class="j-pay"><div class="j-ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>JazzCash</h3><p>Send from your mobile wallet.</p></div>
-        <div class="j-pay"><div class="j-ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="m10 10 2 2 2-2M12 6v6"/></svg></div><h3>Easypaisa</h3><p>Send from your mobile wallet.</p></div>
+        <div class="j-pay "><div class="j-ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10 12 4l9 6M5 10v8M9 10v8M15 10v8M19 10v8M3 20h18"/></svg></div><h3>Bank transfer</h3><p>Account details shared on WhatsApp.</p></div>
+        <div class="j-pay "><div class="j-ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>JazzCash</h3><p>Send from your mobile wallet.</p></div>
+        <div class="j-pay "><div class="j-ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="m10 10 2 2 2-2M12 6v6"/></svg></div><h3>Easypaisa</h3><p>Send from your mobile wallet.</p></div>
+        <div class="j-pay info"><div class="j-ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Pay in advance</h3><p>Payment is taken before each order is delivered.</p></div>
+        <div class="j-pay info"><div class="j-ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8 8 9 4.6-1 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>100% refundable</h3><p>If we ever fail to deliver a meal, you get that amount back.</p></div>
+        <div class="j-pay no"><div class="j-ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m5.6 5.6 12.8 12.8"/></svg></div><h3>No cash or cards</h3><p>Cash on delivery and card payments are not accepted.</p></div>
       </div>
-      <div class="j-badges"><span class="j-badge ok">✓ Bank transfer</span><span class="j-badge ok">✓ JazzCash</span><span class="j-badge ok">✓ Easypaisa</span><span class="j-badge no">Cash on delivery</span><span class="j-badge no">Cards</span></div>
     </div>
   </section>
 
@@ -218,7 +220,7 @@
     <div class="container">
       <h2>Ready to join?</h2>
       <p>Message us on WhatsApp before 11:00 PM for next-day delivery.</p>
-      <a href="https://wa.me/923309993307?text=Hi%2C%20I%27d%20like%20to%20join%20NoshMat%C3%A9%20office%20lunch" class="btn-primary" target="_blank" rel="noopener"><span class="btn-icon"><svg class="wa-glyph" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span>Order Now</a>
+      <a href="https://app.noshmate.pk" class="btn-primary" target="_blank" rel="noopener"><span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Order Now</a>
     </div>
   </section>
 
