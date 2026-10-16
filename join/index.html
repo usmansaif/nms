@@ -69,6 +69,7 @@
 .j-fact{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;text-align:center;box-shadow:0 10px 26px rgba(18,24,26,.07)}
 .j-fact b{display:block;font-size:22px;color:var(--nosh-green);font-family:'Plus Jakarta Sans',sans-serif}
 .j-fact span{font-size:13.5px;color:var(--ink-soft)}
+.j-fact.j-cta{display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,#14532D,#1F7A47);border:0;color:#fff;text-decoration:none;box-shadow:0 14px 30px rgba(20,83,45,.35);transition:transform .2s ease,box-shadow .2s ease}.j-fact.j-cta b{color:#fff;font-size:20px}.j-fact.j-cta svg{transition:transform .2s ease}.j-fact.j-cta:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(20,83,45,.45)}.j-fact.j-cta:hover svg{transform:translateX(4px)}
 .j-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;counter-reset:s}
 .j-step{position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;padding:34px 24px 26px;text-align:center}
 .j-step .n{position:absolute;top:-18px;left:50%;transform:translateX(-50%);width:38px;height:38px;border-radius:50%;background:var(--grad-orange,#F2820C);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 14px rgba(242,130,12,.35)}
@@ -148,7 +149,7 @@
         <div class="j-fact"><b>11:00 PM</b><span>Order cutoff for next-day delivery</span></div>
         <div class="j-fact"><b>Mon – Sat</b><span>Delivery days</span></div>
         <div class="j-fact"><b>6 items</b><span>In every individually boxed meal</span></div>
-        <a class="j-fact" href="https://app.noshmate.pk" target="_blank" rel="noopener" style="text-decoration:none"><b style="color:var(--orange,#F2820C)">Order Now</b></a>
+        <a class="j-fact j-cta" href="https://app.noshmate.pk" target="_blank" rel="noopener"><b>Order Now</b><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
       </div>
     </div>
   </section>
