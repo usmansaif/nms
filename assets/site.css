@@ -2100,3 +2100,26 @@ blockquote.quote-card cite {
 .info-grid.cols-4 {
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
 }
+
+/* ---------- Ticker ---------- */
+.ticker {
+  background: var(--mate-orange);
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding: 9px 0;
+}
+.ticker > div {
+  display: inline-block;
+  animation: ticker-scroll 40s linear infinite;
+}
+.ticker span { display: inline-block; padding: 0 22px; }
+.ticker span::after { content: "\2022"; margin-left: 44px; opacity: .7; }
+@keyframes ticker-scroll { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .ticker > div { animation: none; } }
+
