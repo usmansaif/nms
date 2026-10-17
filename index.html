@@ -465,6 +465,28 @@
       transition-delay: .6s;
     }
 
+    /* ---------- Ticker ---------- */
+    .ticker {
+      background: var(--mate-orange);
+      color: #fff;
+      overflow: hidden;
+      white-space: nowrap;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: 9px 0;
+    }
+    .ticker > div {
+      display: inline-block;
+      animation: ticker-scroll 40s linear infinite;
+    }
+    .ticker span { display: inline-block; padding: 0 22px; }
+    .ticker span::after { content: "\2022"; margin-left: 44px; opacity: .7; }
+    @keyframes ticker-scroll { to { transform: translateX(-50%); } }
+    @media (prefers-reduced-motion: reduce) { .ticker > div { animation: none; } }
+
     /* ---------- Nav ---------- */
     header {
       position: -webkit-sticky;
@@ -2212,6 +2234,13 @@
 </head>
 
 <body>
+
+<div class="ticker mono" aria-hidden="true"><div>
+  <span>Order by 11 PM for tomorrow</span><span>Mon – Sat</span><span>Lahore</span><span>Boxed individually</span><span>100% refund if not delivered</span>
+  <span>Order by 11 PM for tomorrow</span><span>Mon – Sat</span><span>Lahore</span><span>Boxed individually</span><span>100% refund if not delivered</span>
+  <span>Order by 11 PM for tomorrow</span><span>Mon – Sat</span><span>Lahore</span><span>Boxed individually</span><span>100% refund if not delivered</span>
+  <span>Order by 11 PM for tomorrow</span><span>Mon – Sat</span><span>Lahore</span><span>Boxed individually</span><span>100% refund if not delivered</span>
+</div></div>
 
   <header>
     <div class="nav-shell">
