@@ -80,6 +80,7 @@
 .j-step p,.j-pay p,.j-plan p{margin:0;color:var(--ink-soft);font-size:14.5px;line-height:1.65}
 .j-pays{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .j-pay{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:24px;text-align:center}
+.j-logo{height:58px;margin:0 auto 14px;display:flex;align-items:center;justify-content:center}.j-logo img{max-height:100%;max-width:150px;width:auto;height:auto;object-fit:contain}
 .j-pay .j-ico{color:var(--nosh-green);background:#e8f5ec}
 .j-pay.info{background:#fff}.j-pay.info .j-ico{background:var(--grad-orange,#F2820C);color:#fff}.j-pay.no .j-ico{background:#fdecec;color:#a83232}.j-badges{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:24px}
 .j-badge{padding:10px 18px;border-radius:999px;font-size:14px;font-weight:700}
@@ -177,8 +178,8 @@
       <div class="section-head"><span class="eyebrow">Payment</span><h2>How Payment Works</h2></div>
       <div class="j-pays">
         <div class="j-pay "><div class="j-ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10 12 4l9 6M5 10v8M9 10v8M15 10v8M19 10v8M3 20h18"/></svg></div><h3>Bank transfer</h3><p>Account details shared on WhatsApp.</p></div>
-        <div class="j-pay "><div class="j-ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>JazzCash</h3><p>Send from your mobile wallet.</p></div>
-        <div class="j-pay "><div class="j-ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="m10 10 2 2 2-2M12 6v6"/></svg></div><h3>Easypaisa</h3><p>Send from your mobile wallet.</p></div>
+        <div class="j-pay "><div class="j-logo"><img src="/assets/brand/jazzcash.png" alt="JazzCash logo" loading="lazy"></div><h3>JazzCash</h3><p>Send from your mobile wallet.</p></div>
+        <div class="j-pay "><div class="j-logo"><img src="/assets/brand/easypaisa.png" alt="Easypaisa logo" loading="lazy"></div><h3>Easypaisa</h3><p>Send from your mobile wallet.</p></div>
         <div class="j-pay info"><div class="j-ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Pay in advance</h3><p>Payment is taken before each order is delivered.</p></div>
         <div class="j-pay info"><div class="j-ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8 8 9 4.6-1 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>100% refundable</h3><p>If we ever fail to deliver a meal, you get that amount back.</p></div>
         <div class="j-pay no"><div class="j-ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m5.6 5.6 12.8 12.8"/></svg></div><h3>No cash or cards</h3><p>Cash on delivery and card payments are not accepted.</p></div>
